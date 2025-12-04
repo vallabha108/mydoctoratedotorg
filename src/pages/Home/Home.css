@@ -1,7 +1,63 @@
+/* General Styles */
 .home {
-    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0056b3;
+    /* Example brand color */
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: rgba(0, 86, 179, 0.1);
+    /* Semi-transparent blue */
+    color: #0056b3;
+    border: 2px solid #0056b3;
+    padding: 12px 30px;
+    border-radius: 50px;
+    /* Curved edges */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #0056b3;
+    border: 2px solid #0056b3;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f8ff;
+}
+
+/* Original Hero Section */
 .hero {
     position: relative;
     height: 600px;
@@ -54,17 +110,162 @@
     text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 768px) {
-    .hero {
-        height: 400px;
-    }
+/* New Content Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 100px 0;
+}
 
-    .hero-tagline {
-        font-size: 14px;
-        letter-spacing: 2px;
+.content-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Membership Section */
+.membership-section {
+    background-color: white;
+}
+
+.membership-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.membership-image {
+    flex: 1;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.membership-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.membership-details {
+    flex: 1;
+}
+
+.feature-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+}
+
+/* Governance Section */
+.governance-section {
+    background-color: #f8f9fa;
+}
+
+.governance-block,
+.ecosystem-block {
+    margin-bottom: 40px;
+}
+
+/* Tiered Membership Section */
+.tiered-membership-section {
+    text-align: center;
+}
+
+.tiers-list {
+    margin: 40px 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.tier-item {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f3f5;
+    border-radius: 5px;
+}
+
+.cohort-cta {
+    margin-top: 40px;
+    background-color: #e7f5ff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Study Portfolio Section */
+.study-portfolio-section {
+    background-color: #fff;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.course-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    font-weight: 500;
+}
+
+/* Internships Section */
+.internships-section {
+    background-color: #f1f3f5;
+}
+
+/* Footer CTA Section */
+.footer-cta-section {
+    background-color: #002a5c;
+    /* Darker blue */
+    color: white;
+    text-align: center;
+}
+
+.footer-cta-section .section-title {
+    color: white;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .membership-content {
+        flex-direction: column;
     }
 
     .hero-title {
-        font-size: 42px;
+        font-size: 2.5rem;
     }
 }
