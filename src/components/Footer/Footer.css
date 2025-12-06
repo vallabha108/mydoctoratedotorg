@@ -1,0 +1,167 @@
+/* Footer.css */
+.footer-container {
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Reused Loop/CTA Section Styles */
+.footer-cta-section {
+    background-color: #002a5c;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    /* Consistent padding */
+}
+
+.footer-cta-section .section-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Standard Buttons for reuse in footer context */
+.btn-primary-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-footer:hover {
+    background-color: white;
+    color: #002a5c;
+}
+
+.btn-secondary-footer {
+    background-color: white;
+    color: #002a5c;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary-footer:hover {
+    background-color: #f0f8ff;
+}
+
+/* Bottom Bar Styles */
+.footer-bottom-bar {
+    background-color: white;
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    border-top: 1px solid #e9ecef;
+    position: relative;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Left: Policies */
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Center: Brand & Icon */
+.footer-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.footer-icon {
+    font-size: 2.5rem;
+    /* Large icon size */
+    color: #002a5c;
+}
+
+.footer-brand-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #002a5c;
+}
+
+/* Right: Copyright & Email */
+.footer-right {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 25px;
+    /* Spacing to align with top of component visually */
+    font-weight: 500;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center;
+        flex: auto;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+}

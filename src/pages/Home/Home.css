@@ -12,7 +12,8 @@
 }
 
 section {
-    padding: 60px 0;
+    padding: 10px 0;
+    /* Reduced from 60px as requested */
 }
 
 .section-title {
@@ -220,19 +221,84 @@ section {
     background-color: #fff;
 }
 
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin-top: 40px;
 }
 
-.course-item {
+.portfolio-group {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.portfolio-category-title {
+    font-size: 1.5rem;
+    color: #002a5c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.pathway-subgroups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.pathway-col {
     background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.pathway-subtitle {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    /* Slightly wider cards */
+    gap: 20px;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-item,
+.course-item-sm {
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #dee2e6;
     font-weight: 500;
+    font-size: 1rem;
+    color: #343a40;
+    transition: transform 0.2s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.course-item-sm {
+    padding: 12px;
+    font-size: 0.95rem;
+}
+
+.course-item:hover,
+.course-item-sm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    border-color: #adb5bd;
 }
 
 /* Internships Section */
@@ -240,24 +306,7 @@ section {
     background-color: #f1f3f5;
 }
 
-/* Footer CTA Section */
-.footer-cta-section {
-    background-color: #002a5c;
-    /* Darker blue */
-    color: white;
-    text-align: center;
-}
 
-.footer-cta-section .section-title {
-    color: white;
-}
-
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
