@@ -1,0 +1,136 @@
+.internship-page {
+    padding-top: 80px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    /* Reduced specific maxWidth for readability */
+    margin: 0 auto;
+}
+
+/* Hero & Intro */
+.internship-hero-section {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.internship-image-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.internship-hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.internship-title {
+    color: #0056b3;
+    /* Matching section titles */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.internship-subtitle {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.internship-feature-list {
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.internship-feature-list li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Partner Plan Section */
+.partner-plan-section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.section-title {
+    color: #0056b3;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.subsection-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.partner-text {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.partner-benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.partner-benefits-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.employer-benefits-section {
+    padding: 50px 0;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.benefit-item {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-item h4 {
+    color: #002a5c;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.benefit-item p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.benefit-sublist {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.benefit-sublist li {
+    margin-bottom: 5px;
+}

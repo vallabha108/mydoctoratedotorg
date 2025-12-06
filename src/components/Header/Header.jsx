@@ -8,12 +8,12 @@ const Header = () => {
     const navigationData = {
         home: [
             { label: 'Tiered Membership', path: '/tiered-membership' },
-            { label: 'Study Portfolio', path: '/#study-portfolio' },
-            { label: 'Internship Marketplace', path: '/#internship-marketplace' },
-            { label: 'Fees & Pricing Structure', path: '/#fees-pricing' },
-            { label: 'Platform Compliance and Readiness', path: '/#compliance' },
-            { label: 'Founding Roadmap', path: '/#roadmap' },
-            { label: 'What we will measure', path: '/#measure' },
+            { label: 'Study Portfolio', path: '/study-portfolio' },
+            { label: 'Internship Marketplace', path: '/internship-marketplace' },
+            { label: 'Fees & Pricing Structure', path: '/fees-and-pricing' },
+            { label: 'Platform Compliance and Readiness', path: '/platform-compliance' },
+            { label: 'Founding Roadmap', path: '/founding-roadmap' },
+            { label: 'What we will measure', path: '/what-we-will-measure' },
         ],
         researchers: [
             { label: 'Access to Doctorate', path: '/researchers/access-doctorate' },

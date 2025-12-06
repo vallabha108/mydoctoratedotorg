@@ -1,0 +1,152 @@
+.fees-page {
+    padding-top: 80px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.fees-hero-section {
+    padding-bottom: 40px;
+}
+
+.fees-hero-image-container {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.fees-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fees-intro {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.fees-title {
+    color: #0088cc;
+    /* Light bright blue */
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.fees-subtitle {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Pricing Table */
+.pricing-table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pricing-row {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    /* Vertically align content */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Column Widths */
+.col-portfolio {
+    flex: 2;
+    /* 50% width effectively */
+}
+
+.col-member {
+    flex: 1;
+    /* 25% */
+}
+
+.col-non-member {
+    flex: 1;
+    /* 25% */
+}
+
+/* Header Row Style */
+.header-row {
+    background-color: #4da6ff;
+    /* Header Blue */
+    color: black;
+    /* Text seems to be black in image actually? No, it looks dark text on blue bg */
+}
+
+.header-row {
+    background-color: #5fa8e6;
+    /* Lighter blue for header similar to visual */
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-row h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.header-row p {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Detail Rows */
+.grey-row {
+    background-color: #e9ecef;
+    /* Light Grey */
+}
+
+.blue-row {
+    background-color: #d1ecf1;
+    /* Light Cyan/Blue */
+}
+
+.pricing-row h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: 700;
+}
+
+.col-portfolio p,
+.col-member p,
+.col-non-member p {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-row {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .center-text {
+        text-align: left;
+    }
+
+    .header-row {
+        display: none;
+        /* Hide header on mobile, stack cards instead? Or keep headers inside */
+    }
+
+    /* On mobile maybe better to show cards? For now just stacking */
+}

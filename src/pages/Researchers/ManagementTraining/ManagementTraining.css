@@ -1,0 +1,236 @@
+.management-training-page {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000;
+    /* text-align: center; Optional, keeping left like others */
+}
+
+/* Intro Section */
+.mt-intro-section {
+    margin-bottom: 100px;
+}
+
+.mt-grid {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.mt-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.mt-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mt-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.02);
+}
+
+/* Superimposed Section (Blue Panel) */
+.mt-superimposed-section {
+    margin-bottom: 60px;
+}
+
+.mt-super-row {
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+    max-width: 1200px;
+    /* Use container width or less */
+    margin: 0 auto;
+}
+
+.mt-blue-panel {
+    background-color: #002147;
+    color: #fff;
+    flex: 1.5;
+    /* Text takes more space */
+}
+
+.panel-top {
+    padding: 60px 80px 40px 60px;
+    border-radius: 8px 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.panel-bottom {
+    padding: 0 80px 60px 60px;
+    border-radius: 0 0 0 8px;
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+    min-height: 500px;
+    /* Ensure tall backdrop */
+}
+
+.mt-image-col {
+    flex: 1;
+    position: relative;
+}
+
+/* Superimposed Image Logic */
+.superimposed-img {
+    position: relative;
+    z-index: 10;
+    margin-left: -60px;
+    /* Overlap left */
+    margin-top: -140px;
+    /* Pull up to center */
+    border-radius: 8px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: auto;
+    /* Natural height for bottom gap */
+}
+
+.placeholder-col {
+    /* Empty space for top row */
+}
+
+/* Divider */
+.mt-divider {
+    border: 0;
+    border-top: 2px solid #fff;
+    opacity: 0.8;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Course Blocks */
+.mt-course-block {
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle separator */
+    padding-bottom: 30px;
+}
+
+.mt-course-block:last-child {
+    border-bottom: none;
+}
+
+.course-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.course-subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #ffd700;
+    /* Gold or distinct color for subtitle? Keeping white or subtle gold? Let's use generic white for now designated in JSX, but CSS can override. */
+    color: #aaddff;
+    /* Light blue offset */
+}
+
+.key-benefits-label {
+    display: block;
+    margin: 15px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.mt-list {
+    list-style-type: none;
+    /* User prompt had spacing, maybe bullets? Let's use bullets. */
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.mt-list li {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.white-text {
+    color: #fff !important;
+}
+
+/* Dark text variants for standard sections */
+.course-subtitle-dark {
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* Semi-bold */
+    margin-bottom: 20px;
+    color: #002147;
+    /* Blue accent or just dark grey */
+}
+
+.mt-list-dark {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.mt-list-dark li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.mt-reverse-grid {
+    /* Optional alignment tweaks for reverse layout */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .mt-grid,
+    .mt-super-row {
+        flex-direction: column;
+    }
+
+    .mt-text-col,
+    .mt-image-col {
+        flex: auto;
+        width: 100%;
+    }
+
+    .superimposed-img {
+        margin-left: 0;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .panel-top,
+    .panel-bottom {
+        padding: 40px;
+        border-radius: 8px;
+    }
+
+    .panel-bottom {
+        border-radius: 0 0 8px 8px;
+        padding-top: 0;
+    }
+
+    .panel-top {
+        border-radius: 8px 8px 0 0;
+    }
+}

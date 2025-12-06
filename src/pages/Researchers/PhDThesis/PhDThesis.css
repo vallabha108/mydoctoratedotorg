@@ -1,0 +1,288 @@
+.phd-thesis-page {
+    padding-top: 80px;
+    background-color: #fff;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hero */
+.phd-hero-section {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.phd-hero-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.phd-hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.phd-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.phd-hero-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Grid Layout */
+.phd-grid {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    /* Default top align, usually better for text/chart mix */
+    margin-bottom: 80px;
+}
+
+.phd-text-col {
+    flex: 1;
+}
+
+.phd-image-col,
+.phd-chart-col {
+    flex: 1;
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-img {
+    width: 100%;
+    height: auto;
+    /* Charts might need to be fully visible */
+    object-fit: contain;
+}
+
+/* Typography */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.phd-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Programme Details */
+.programme-block,
+.completion-block {
+    margin-bottom: 25px;
+}
+
+.programme-year-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.programme-label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.programme-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.programme-list li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .phd-grid {
+        flex-direction: column;
+    }
+
+    .phd-hero-title {
+        font-size: 2rem;
+    }
+}
+
+/* Split Row Layout for Perfect Alignment */
+.completion-row {
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* Container-like behavior */
+}
+
+/* Completion Section Specifics */
+.completion-text-panel {
+    background-color: #002147;
+    color: #fff;
+    /* No generic padding here, moved to sub-classes */
+}
+
+/* Panel Split Styling */
+.panel-top {
+    padding: 40px 80px 40px 40px;
+    /* Match bottom panel padding for alignment */
+    border-radius: 8px 0 0 0;
+    position: relative;
+    z-index: 1;
+    /* Ensure on top */
+}
+
+.panel-bottom {
+    padding: 0 80px 40px 40px;
+    /* Increased right padding to accommodate overlap */
+    border-radius: 0 0 0 8px;
+    margin-top: -1px;
+    /* Seal subpixel gap */
+    position: relative;
+    z-index: 1;
+}
+
+/* Force first heading to align with image top */
+.panel-bottom .programme-label {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.panel-bottom {
+    padding: 0 80px 40px 40px;
+    /* Increased right padding to accommodate overlap */
+    border-radius: 0 0 0 8px;
+    margin-top: -1px;
+    /* Seal subpixel gap */
+    position: relative;
+    z-index: 1;
+    min-height: 400px;
+    /* Ensure tall blue panel for visual balance */
+}
+
+.title-divider {
+    border: 0;
+    border-top: 2px solid #fff;
+    width: 100%;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+.white-text {
+    color: #fff !important;
+}
+
+.phd-completion-section .programme-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.phd-completion-section .programme-list li {
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.phd-completion-section .phd-text-col {
+    flex: 1.5;
+    /* Maintain Blue Panel width */
+}
+
+.phd-completion-section .phd-image-col {
+    flex: 1;
+    /* Maintain Image width */
+    position: relative;
+    z-index: 10;
+    /* Put image on top of blue panel */
+    margin-left: -60px;
+    /* Superimpose image over text panel */
+    margin-top: -100px;
+    /* Adjusted pull-up for centered positioning */
+}
+
+.full-height-img {
+    width: 100%;
+    height: auto;
+    /* Allow natural height to create gap at bottom if text is longer */
+    object-fit: cover;
+    border-radius: 8px;
+    /* Rounded all corners for imposed look */
+    display: block;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.25);
+    /* Shadow on left to show overlap */
+}
+
+@media (max-width: 768px) {
+    .phd-grid {
+        flex-direction: column;
+    }
+
+    .phd-hero-title {
+        font-size: 2rem;
+    }
+
+    .completion-row {
+        flex-direction: column;
+    }
+
+    .phd-completion-section .phd-image-col {
+        margin-top: 0;
+        margin-left: 0;
+        /* Reset overlap */
+    }
+
+    .panel-top {
+        border-radius: 8px 8px 0 0;
+        padding-right: 40px;
+    }
+
+    .panel-bottom {
+        border-radius: 0 0 8px 8px;
+        padding-right: 40px;
+    }
+
+    .full-height-img {
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+}

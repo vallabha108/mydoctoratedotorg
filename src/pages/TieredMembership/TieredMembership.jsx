@@ -5,20 +5,14 @@ import './TieredMembership.css';
 const TieredMembership = () => {
     return (
         <div className="tiered-membership-page">
-            {/* Reused Hero Section */}
-            <section className="hero">
-                <div className="hero-overlay">
-                    <h2 className="hero-tagline">GLOBAL DOCTORAL EXCELLENCE</h2>
-                    <h1 className="hero-title">MyDoctorate.org</h1>
-                </div>
-            </section>
-
             <div className="tiered-content-container">
+                {/* Hero Image */}
+                <div className="tm-image-container">
+                    <img src="/images/tiered/img0.png" alt="Doctoral Ecosystem" className="tm-img" />
+                </div>
+
                 {/* Ecosystem Section */}
                 <section className="tm-section ecosystem-section">
-                    <div className="tm-image-container">
-                        <img src="/images/tiered/img0.png" alt="Doctoral Ecosystem" className="tm-img" />
-                    </div>
                     <div className="tm-text-content">
                         <h2 className="tm-title">Designed for every voice in the doctoral ecosystem</h2>
                         <p className="tm-subtitle">MyDoctorate.org convenes researchers, supervisors, institutions and employers into one high-trust network.</p>
@@ -44,9 +38,10 @@ const TieredMembership = () => {
                     </div>
                 </section>
 
+                <h2 className="tm-title text-center mb-5">MyDoctorate.org — Tiered Membership Model</h2>
+
                 {/* Tier 1: FREE */}
                 <section className="tm-section tier-section">
-                    <h2 className="tm-title text-center mb-5">MyDoctorate.org — Tiered Membership Model</h2>
                     <div className="tm-text-content">
                         <h2 className="tm-title">Tier 1: FREE — Research Community Access</h2>
                         <p><strong>Target users:</strong> Prospective researchers · Early-stage candidates · Supervisors exploring the platform · Employers observing doctoral engagement</p>

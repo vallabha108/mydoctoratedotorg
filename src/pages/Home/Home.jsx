@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaBook, FaChalkboardTeacher, FaRocket } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
@@ -76,114 +77,12 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Study Portfolio Section */}
-            <section id="study-portfolio" className="study-portfolio-section">
-                <div className="container">
-                    <h2 className="section-title">Study portfolio mapped to DCUK milestones</h2>
-                    <p className="section-description">
-                        At DCUK, your learning for all areas of study is through microcredentials which are short, flexible, and highly focused qualifications designed to help learners quickly develop in-demand skills. Each microcredential provides targeted learning that can be completed in weeks rather than years, making them ideal for upskilling, reskilling, or exploring new professional pathways. Recognised by employers and aligned with industry needs, microcredentials offer practical, career-boosting knowledge with the option to stack into larger qualifications.
-                    </p>
-                    <div className="portfolio-container">
-                        {/* Access to Doctorate */}
-                        <div className="portfolio-group">
-                            <h3 className="portfolio-category-title">Access to Doctorate</h3>
-                            <div className="course-grid">
-                                <div className="course-item">Access to Doctorate</div>
-                            </div>
-                        </div>
 
-                        {/* Doctoral Pathways */}
-                        <div className="portfolio-group">
-                            <h3 className="portfolio-category-title">Doctoral Pathways</h3>
-                            <div className="pathway-subgroups">
-                                <div className="pathway-col">
-                                    <h4 className="pathway-subtitle">1) By Thesis Pathway</h4>
-                                    <div className="course-list">
-                                        <div className="course-item-sm">PhD Year 1 (Thesis Pathway)</div>
-                                        <div className="course-item-sm">PhD Year 2 (Thesis Pathway)</div>
-                                        <div className="course-item-sm">PhD Year 3 (Thesis Pathway)</div>
-                                    </div>
-                                </div>
-                                <div className="pathway-col">
-                                    <h4 className="pathway-subtitle">2) Publication Mentor Pathway</h4>
-                                    <div className="course-list">
-                                        <div className="course-item-sm">PhD Year 1 (Publication Mentor Path)</div>
-                                        <div className="course-item-sm">PhD Year 2 (Publication Mentor Path)</div>
-                                    </div>
-                                </div>
-                                <div className="pathway-col">
-                                    <h4 className="pathway-subtitle">3) Publication Fast Track</h4>
-                                    <div className="course-list">
-                                        <div className="course-item-sm">PhD Year 1 (Publication Fast Track)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        {/* Professional Training & CPD */}
-                        <div className="portfolio-group">
-                            <h3 className="portfolio-category-title">Training CPD Tracks & Trainings</h3>
-                            <div className="course-grid">
-                                <div className="course-item">Research Training CPD</div>
-                                <div className="course-item">Management Training CPD</div>
-                                <div className="course-item">The AI Engineer’s Playbook: From Models to Agents</div>
-                                <div className="course-item">Teaching Practice Training</div>
-                                <div className="course-item">PhD Supervisor Training</div>
-                                <div className="course-item">Research Fellowship Training</div>
-                                <div className="course-item">Chartered Accountant Training</div>
-                                <div className="course-item">Entrepreneurship Training</div>
-                                <div className="course-item">Digital Marketeer (Social Media) Training</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            {/* Internships Marketplace Section */}
-            <section id="internship-marketplace" className="internships-section">
-                <div className="container">
-                    <h2 className="section-title">Internships marketplace with end-to-end assurance</h2>
-                    <p className="section-subtitle">A curated placements engine joining doctoral talent with employers, backed by quality templates and mentor support.</p>
-                    <ul className="feature-list">
-                        <li>Curated marketplace with 16–48 week placements aligned to candidate expertise and employer projects.</li>
-                        <li>Structured learning contracts, dual-supervision model and transparent deliverables for every placement.</li>
-                        <li>Digital credentials wallet emitting references, badges and deliverables back into the MyDoctorate.org portfolio.</li>
-                        <li>Template legal toolkit covering NDA, IP, data protection and internship agreements to de-risk adoption.</li>
-                    </ul>
-                </div>
-            </section>
 
-            {/* Pricing Section */}
-            <section id="fees-pricing" className="pricing-section">
-                <div className="container">
-                    <h2 className="section-title">Transparent and discounted pricing structure for members and non-members</h2>
-                    <p>Members benefit from a single £120 annual subscription, unlocking 50% or greater savings across flagship pathways.</p>
-                </div>
-            </section>
 
-            {/* Compliance Section */}
-            <section id="compliance" className="compliance-section">
-                <div className="container">
-                    <h2 className="section-title">Platform compliance and readiness</h2>
-                    <p>MyDoctorate.org integrates learning, community and commerce infrastructure with rigorous governance.</p>
-                </div>
-            </section>
 
-            {/* Roadmap Section */}
-            <section id="roadmap" className="roadmap-section">
-                <div className="container">
-                    <h2 className="section-title">Founding roadmap</h2>
-                    <p>A focused rollout enabling early cohort testing ahead of full commercial launch.</p>
-                </div>
-            </section>
-
-            {/* Measurement Section */}
-            <section id="measure" className="measurement-section">
-                <div className="container">
-                    <h2 className="section-title">What we will measure</h2>
-                    <p>Clear performance telemetry keeps the MyDoctorate.org launch accountable to learners, partners and investors.</p>
-                </div>
-            </section>
 
 
         </div>

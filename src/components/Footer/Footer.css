@@ -29,9 +29,9 @@
 
 /* Standard Buttons for reuse in footer context */
 .btn-primary-footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: 2px solid white;
+    background-color: #ffc107;
+    color: #002a5c;
+    border: 2px solid #ffc107;
     padding: 12px 30px;
     border-radius: 50px;
     font-size: 1rem;
